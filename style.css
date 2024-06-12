@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .line-one,
+  .line-two {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    border-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .red {
+    background-color: #ff5252;
+    color: #fff;
+  }
+  
+  .yellow {
+    background-color: #ffeb3b;
+    color: #333;
+  }
+  
+  .green {
+    background-color: #66bb6a;
+    color: #fff;
+  }
+  
+  .purple {
+    background-color: #7e57c2;
+    color: #fff;
+  }
+
+  .flash {
+    animation: flashAnimation 0.25s linear;
+  }
+  
+  @keyframes flashAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .btn {
+      width: 80px;
+      height: 80px;
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      width: 60px;
+      height: 60px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  }
+  
